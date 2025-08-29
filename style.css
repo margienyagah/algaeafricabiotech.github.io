@@ -53,7 +53,7 @@ nav ul li a:hover {
 /* Hero */
 .hero {
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-              url('hero1.jpg') center/cover no-repeat;
+              url('hero2.jpg') center/cover no-repeat;
   /* Rest of your hero styling */
 }
 
@@ -141,5 +141,6 @@ footer {
   padding: 15px;
   margin-top: 20px;
 }
+
 
 

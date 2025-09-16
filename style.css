@@ -68,7 +68,10 @@ nav ul li a:hover {
   margin-bottom: 20px;
   font-weight: 700;
 }
-
+.hero h1,
+.hero p {
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
 .hero p {
   margin-bottom: 25px;
   font-size: 1.3rem;
@@ -204,4 +207,5 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
 

@@ -204,12 +204,19 @@ strong {
 }
 
 .logo {
-  flex: 0 0 auto;
+    width: 230px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 }
 
 .logo img {
-  height: 58px;
-  width: auto;
+    width: 230px;
+    height: 230px;
+    max-width: none;
+    object-fit: contain;
+    transform: translateY(-78px);
 }
 
 .main-nav {

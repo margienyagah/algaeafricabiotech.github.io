@@ -180,14 +180,13 @@ strong {
 ========================= */
 
 .site-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-
-  background: rgba(3, 42, 50, 0.96);
-  backdrop-filter: blur(12px);
-
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    background: #ffffff;
+    color: #082b6f;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #e5edf0;
+    box-shadow: 0 2px 12px rgba(8, 43, 111, 0.08);
 }
 
 .nav-container {
@@ -223,19 +222,15 @@ strong {
 }
 
 .main-nav a {
-  color: #e4efed;
-  text-decoration: none;
-
-  font-size: 0.91rem;
-  font-weight: 600;
-
-  transition: color 0.25s ease;
+    color: #082b6f;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
 .main-nav a:hover {
-  color: #7ed7bd;
+    color: #20aa94;
 }
-
 .nav-cta {
   padding: 10px 18px;
 

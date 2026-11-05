@@ -1808,3 +1808,137 @@ strong {
   }
 
 }
+
+/* =========================================
+   AAB UPDATED LAYOUT ADJUSTMENTS
+   For the revised index.html
+========================================= */
+
+/* Four approach cards: balanced 2 x 2 layout */
+.process-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* Three development pathways */
+.pathway-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+/* Four cascading benefit cards */
+.benefit-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* Five partnership cards */
+.partner-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+/* Keep cards visually balanced */
+.process-card,
+.pathway-card,
+.benefit-card,
+.partner-card {
+  height: 100%;
+}
+
+/* Improve long headings and text wrapping */
+.process-card h3,
+.pathway-card h3,
+.partner-card h3 {
+  overflow-wrap: break-word;
+}
+
+/* Prevent anchor headings from hiding behind sticky header */
+section[id] {
+  scroll-margin-top: 100px;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 860px) {
+
+  .process-grid,
+  .benefit-grid,
+  .partner-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pathway-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Keep navigation available on smaller screens */
+  .nav-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 0;
+  }
+
+  .main-nav {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    justify-content: flex-start;
+    gap: 18px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 8px 2px 12px;
+    scrollbar-width: thin;
+  }
+
+  .main-nav a {
+    flex: 0 0 auto;
+    font-size: 0.82rem;
+  }
+
+  .logo img {
+    height: 48px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .process-grid,
+  .benefit-grid,
+  .partner-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pathway-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-container {
+    width: calc(100% - 28px);
+  }
+
+  .main-nav {
+    gap: 16px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.3rem, 10vw, 3.3rem);
+  }
+
+  .hero-content > * {
+    max-width: 100%;
+  }
+
+  .flow-result {
+    overflow-wrap: anywhere;
+  }
+
+  .pathway-top {
+    flex-wrap: wrap;
+  }
+}
